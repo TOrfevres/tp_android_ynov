@@ -1,29 +1,25 @@
 package com.ynov.android.to.theodore_orfevres;
 
-
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
+import com.ynov.android.to.theodore_orfevres.bean.Contact;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+import java.util.List;
+
 public class TalkPageFragment extends Fragment {
-
-
     public TalkPageFragment() {
-        // Required empty public constructor
+//        RecyclerView recyclerView = getView().findViewById(R.id.talk_rView);
+//
+//        recyclerView.setHasFixedSize(true);
+//
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+//        recyclerView.setLayoutManager(layoutManager);
+//
+//        List<Contact> talks = getArguments().getParcelableArrayList("talk_list");
+//
+//        TalkAdapter coursesAdapter = new TalkAdapter(talks);
+//        recyclerView.setAdapter(coursesAdapter);
     }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_talk_page, container, false);
-    }
-
 }

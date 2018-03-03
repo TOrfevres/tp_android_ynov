@@ -14,6 +14,5 @@
     <dimen name="font_size_small">14sp</dimen>
 
     <!-- APP -->
-    <dimen name="field_size">10dp</dimen>
-    <dimen name="img_size">10dp</dimen>
+    <dimen name="img_size">80dp</dimen>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2525B5</color>
-    <color name="colorPrimaryDark">#252575</color>
-    <color name="colorAccent">#FF5000</color>
-    <color name="activityBackground">#BBBB88</color>
+    <color name="colorPrimary">#123456</color>
+    <color name="colorPrimaryDark">#9B9B9B</color>
+    <color name="colorAccent">#CC4D60</color>
+    <color name="activityBackground">#FAFAFA</color>
 </resources>

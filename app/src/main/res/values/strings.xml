@@ -11,7 +11,7 @@
     <string name="user_details">Hello! How much does a ticket cost for Mars? Wow, as much?</string>
 
     <!-- PAGE 3 -->
-    <string name="label">Mon compte</string>
+    <string name="header">Mon compte</string>
     <string name="field_1">E-mail</string>
     <string name="field_2">Nom</string>
     <string name="field_3">Mot de passe</string>

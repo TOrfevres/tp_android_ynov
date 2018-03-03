@@ -7,10 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ynov.android.to.theodore_orfevres.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class AccountPageFragment extends Fragment {
 
 
