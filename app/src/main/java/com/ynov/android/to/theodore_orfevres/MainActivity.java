@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         // Create contacts
         for (int i = 0; i < 15;i++) {
             List<String> talks = new ArrayList<>();
-            talks.add("Hello world!");
-            talks.add("I'm contact number " + i + "!");
-            talks.add(getResources().getString(R.string.user_details));
+            talks.add(getResources().getString(R.string.user_details_1));
+            talks.add(getResources().getString(R.string.user_details_2) + " " + (i+1));
+            talks.add(getResources().getString(R.string.user_details_3));
             Collections.shuffle(talks);
 
             contacts.add(new Contact(

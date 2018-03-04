@@ -21,14 +21,14 @@ public class TalkAdapter extends RecyclerView.Adapter<TalkViewHolder> {
     @Override
     public TalkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View talkView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_talk_details, parent, false);
+                .inflate(R.layout.talk_view, parent, false);
         return new TalkViewHolder(talkView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull TalkViewHolder holder, int position) {
         String[] words = talks.get(position).getName().split(" ");
-        String initials = words[0] + words[1];
+        String initials = "" + words[0].charAt(0) + words[1].charAt(0);
         holder.getImg().setText(initials);
 
         holder.getLabel().setText(talks.get(position).getName());

@@ -15,8 +15,8 @@ public class Contact implements Parcelable {
     }
 
     private Contact(Parcel in) {
-        name = in.readString();
-        in.readStringList(talks);
+        super();
+        readFromParcel(in);
     }
 
     public String getName() {
@@ -46,7 +46,12 @@ public class Contact implements Parcelable {
         dest.writeStringList(talks);
     }
 
-    public static final Creator<Contact> CREATOR = new Creator<Contact>() {
+    private void readFromParcel(Parcel in) {
+        name = in.readString();
+        in.readStringList(talks);
+    }
+
+    public static final Parcelable.Creator<Contact> CREATOR = new Parcelable.Creator<Contact>() {
         @Override
         public Contact createFromParcel(Parcel in) {
             return new Contact(in);

@@ -11,14 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PageAdapter extends FragmentStatePagerAdapter {
-    private FragmentManager fragmentManager = null;
-
     private List<String> tabs = new ArrayList<>();
-    private List<Contact> contacts = new ArrayList<>();
+    private ArrayList<Contact> contacts = new ArrayList<>();
 
     PageAdapter(FragmentManager fm, List<String> tabs, List<Contact> contacts) {
         super(fm);
-        this.fragmentManager = fm;
         this.tabs.addAll(tabs);
         this.contacts.addAll(contacts);
     }
@@ -33,19 +30,17 @@ public class PageAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         Bundle bundle = new Bundle();
 
-        // TODO Wtf is going on with parceler ?
-
         switch (position) {
             case 0:
-//                bundle.putParcelableArrayList("talk_list", contacts);
+                bundle.putParcelableArrayList("talk_list", contacts);
                 TalkPageFragment tFragment = new TalkPageFragment();
-//                tFragment.setArguments(bundle);
+                tFragment.setArguments(bundle);
                 return tFragment;
 
             case 1:
-//                bundle.putParcelableArrayList("contact_list", contacts);
+                bundle.putParcelableArrayList("contact_list", contacts);
                 ContactPageFragment cFragment = new ContactPageFragment();
-//                cFragment.setArguments(bundle);
+                cFragment.setArguments(bundle);
                 return cFragment;
 
             default:

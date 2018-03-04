@@ -8,7 +8,9 @@
 
     <!-- PAGE 1 & 2 -->
     <string name="user_name">Elon Musk</string>
-    <string name="user_details">Hello! How much does a ticket cost for Mars? Wow, as much?</string>
+    <string name="user_details_1">Hello world!</string>
+    <string name="user_details_2">Hey! I\'m contact number</string>
+    <string name="user_details_3">Hello! How much does a ticket cost for Mars? Wow, as much?</string>
 
     <!-- PAGE 3 -->
     <string name="header">Mon compte</string>
@@ -16,6 +18,4 @@
     <string name="field_2">Nom</string>
     <string name="field_3">Mot de passe</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
